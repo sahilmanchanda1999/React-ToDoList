@@ -72,10 +72,11 @@ class Main extends React.Component{
                     onChange={this.handleInput}/>
                     <button type="submit">Add</button>
                 </form>
-            </header>
-            <ListItems items={this.state.items}
+                <ListItems className="scrollit" items={this.state.items}
             deleteItem={this.deleteItem}
             setUpdate={this.setUpdate}/>
+            </header>
+           
             </div>
         );
     }
